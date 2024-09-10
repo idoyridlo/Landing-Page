@@ -53,7 +53,7 @@ header nav ul li {
 }
 
 #hero {
-    background: url('img/bg.jpg') no-repeat center center/cover;
+    background: url('logo.jpg') no-repeat center center/cover;
     color: #fff;
     height: flex;
     display: flex;
@@ -102,12 +102,12 @@ section {
     text-align: center;
 }
 
-#feature {
+#features {
     background: #f9f9f9;
     text-align: center;
 }
 
-#feature .features-row {
+#features .features-row {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -118,6 +118,11 @@ section {
     text-align: center;
     padding: 20px;
     transition: background 0.3s, color 0.3s;
+}
+
+.feature i {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .feature:hover {
@@ -158,9 +163,15 @@ section {
 }
 
 #contact {
-    background: #e9ecef ;
+    background: #e9ecef;
     text-align: center;
     padding: 40px 0;
+}
+.address-map{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .address {
@@ -186,7 +197,7 @@ footer .social {
     justify-content: center;
 }
 
-footer .social li a {
+footer .social li {
     margin: 0 10px;
 }
 
@@ -196,35 +207,32 @@ footer .social li a {
     font-size: 1.2rem;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     header .container {
         flex-direction: column;
-}
+    }
 
-header nav ul {
-    flex-direction: column;
-    align-items: center;
-}
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 
-header nav ul li {
-    margin: 10px 0;
-}
+    header nav li {
+        margin: 10px 0;
+    }
+    #hero h2 {
+        font-size: 2.5rem;
+    }
 
-#hero h2 {
-    font-size: 2.5rem;
-}
+    #fatures .features-row{
+        flex-direction: column;
+    }
 
-#feature .features-row {
-    flex-direction: column;
-}
+    .product-card {
+        width: 80%;
+    }
 
-.product-card {
-    width: 80;
-}
-
-.adderess-map {
-    flex-direction: column;
-}
-
+    .address-map {
+        flex-direction: column;
+    }
 }
